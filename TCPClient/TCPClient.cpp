@@ -56,7 +56,7 @@ int main(int argc, char* argv[])
 			break;
 		}
 
-		printf("[TCP Client] You send %dByte.\n", retval);
+		printf("[TCP Client] %d바이트를 보냈습니다.\n", retval);
 
 		// 데이터 받기
 		retval = recv(sock, buf, retval, MSG_WAITALL);
