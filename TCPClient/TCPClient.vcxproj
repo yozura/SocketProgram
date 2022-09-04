@@ -130,7 +130,9 @@
     <ClCompile Include="TCPClient.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="TCPClient_CloseOnTransfer.cpp" />
+    <ClCompile Include="TCPClient_CloseOnTransfer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="TCPClient_Fixed.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -140,6 +142,7 @@
     <ClCompile Include="TCPClient_Variable.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="ThreadTCPClient.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h" />

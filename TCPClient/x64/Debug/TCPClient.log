@@ -1,2 +1,2 @@
-﻿  TCPClient_CloseOnTransfer.cpp
+﻿  ThreadTCPClient.cpp
   TCPClient.vcxproj -> D:\Programming\SocketProgram\Server\x64\Debug\TCPClient.exe

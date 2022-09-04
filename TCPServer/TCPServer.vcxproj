@@ -133,7 +133,9 @@
     <ClCompile Include="TCPServer2.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="TCPServer_CloseOnTransfer.cpp" />
+    <ClCompile Include="TCPServer_CloseOnTransfer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="TCPServer_Fixed.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -143,6 +145,7 @@
     <ClCompile Include="TCPServer_Variable.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="ThreadTCPServer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h" />

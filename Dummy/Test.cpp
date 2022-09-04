@@ -42,7 +42,7 @@ bool GetDomainName(struct in_addr addr, char* name, int namelen)
 }
 
 
-int main()
+int method()
 {
 	WSADATA wsa;
 	if (WSAStartup(MAKEWORD(2, 2), &wsa) != 0)

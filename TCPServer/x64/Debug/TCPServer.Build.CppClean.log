@@ -1,7 +1,10 @@
 d:\programming\socketprogram\tcpserver\x64\debug\vc143.pdb
 d:\programming\socketprogram\tcpserver\x64\debug\vc143.idb
 d:\programming\socketprogram\tcpserver\x64\debug\tcpserver2.obj
-d:\programming\socketprogram\tcpserver\x64\debug\tcpserver.obj
+d:\programming\socketprogram\tcpserver\x64\debug\tcpserver_fixed.obj
+d:\programming\socketprogram\tcpserver\x64\debug\tcpserver_variable.obj
+d:\programming\socketprogram\tcpserver\x64\debug\tcpserver_fixedvariable.obj
+d:\programming\socketprogram\tcpserver\x64\debug\tcpserver_closeontransfer.obj
 d:\programming\socketprogram\server\x64\debug\tcpserver.exe
 d:\programming\socketprogram\tcpserver\x64\debug\tcpserver.ilk
 d:\programming\socketprogram\server\x64\debug\tcpserver.pdb
