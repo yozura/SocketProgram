@@ -34,7 +34,7 @@ bool GetDomainName(struct in_addr addr, char* name, int namelen)
 		printf("Error gethostbyaddr()");
 		return false;
 	}
-	if (AF_INET != ptr->h_addrtype)
+	if (AF_INET != ptr->h_addrtype) 
 		return false;
 
 	strncpy(name, ptr->h_name, namelen);
