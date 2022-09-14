@@ -45,6 +45,12 @@
     <ClCompile Include="TCPServer_SelecModel.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="TCPServer_AsyncSelect.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPServer_CompletionPort.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h">
