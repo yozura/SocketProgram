@@ -100,6 +100,7 @@ void DisplayText(const char* fmt, ...)
 	SendMessage(hEdit, EM_SETSEL, nLength, nLength);
 	SendMessageA(hEdit, EM_REPLACESEL, FALSE, (LPARAM)cbuf);
 	LeaveCriticalSection(&cs);
+
 }
 
 void DisplayError(const char* msg)

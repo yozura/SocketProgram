@@ -1,2 +1,13 @@
-d:\programming\socketprogram\tcpserver\x64\debug\tcpserver_closeontransfer.obj
-d:\programming\socketprogram\tcpserver\x64\debug\threadtcpserver.obj
+d:\socketprogram\tcpserver\x64\debug\vc143.pdb
+d:\socketprogram\tcpserver\x64\debug\vc143.idb
+d:\socketprogram\tcpserver\x64\debug\tcpserver_asyncselect.obj
+d:\socketprogram\tcpserver\x64\debug\tcpserver_completionport.obj
+d:\socketprogram\server\x64\debug\tcpserver.exe
+d:\socketprogram\tcpserver\x64\debug\tcpserver.ilk
+d:\socketprogram\server\x64\debug\tcpserver.pdb
+d:\socketprogram\tcpserver\x64\debug\tcpserver.tlog\cl.command.1.tlog
+d:\socketprogram\tcpserver\x64\debug\tcpserver.tlog\cl.read.1.tlog
+d:\socketprogram\tcpserver\x64\debug\tcpserver.tlog\cl.write.1.tlog
+d:\socketprogram\tcpserver\x64\debug\tcpserver.tlog\link.command.1.tlog
+d:\socketprogram\tcpserver\x64\debug\tcpserver.tlog\link.read.1.tlog
+d:\socketprogram\tcpserver\x64\debug\tcpserver.tlog\link.write.1.tlog

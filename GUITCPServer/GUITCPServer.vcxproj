@@ -130,6 +130,7 @@
     <ClCompile Include="GUITCPServer.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="GUITCPServer_CompletionPort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h" />

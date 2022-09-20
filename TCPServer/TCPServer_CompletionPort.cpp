@@ -18,7 +18,7 @@ DWORD WINAPI WorkerThread(LPVOID arg);
 int main(int argc, char* argv[])
 {
 	int retval;
-
+	
 	WSADATA wsa;
 	if (WSAStartup(0x0202, &wsa) != 0)
 		return 1;
