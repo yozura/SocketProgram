@@ -140,7 +140,7 @@ DWORD WINAPI ServerMain(LPVOID arg)
 
 		char addr[INET_ADDRSTRLEN];
 		inet_ntop(AF_INET, &clientaddr.sin_addr, addr, sizeof(addr));
-		DisplayText("[TCP 서버] 클라이언트 접속 : IP 주소 = %s, 포트 번호 = %d\n", addr, ntohs(clientaddr.sin_port));
+		DisplayText("[TCP 서버] 클라이언트 접속 : IP 주소 = %s, 포트 번호 = %d\r\n", addr, ntohs(clientaddr.sin_port));
 
 		CreateIoCompletionPort((HANDLE)client_sock, hcp, client_sock, 0);
 
@@ -198,7 +198,7 @@ DWORD WINAPI WorkerThread(LPVOID arg)
 			ptr->sendbytes = 0;
 
 			ptr->buf[ptr->recvbytes] = '\0';
-			DisplayText("\n[TCP/%s:%d] %s\r\n", addr, ntohs(clientaddr.sin_port), ptr->buf);
+			DisplayText("[TCP/%s:%d] %s\r\n", addr, ntohs(clientaddr.sin_port), ptr->buf);
 		}
 		else ptr->sendbytes += cbTransferred;
 

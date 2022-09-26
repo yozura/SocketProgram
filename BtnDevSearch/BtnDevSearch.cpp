@@ -19,8 +19,7 @@ int main(int argc, char* argv[])
 	memset(qs, 0, qslen);
 	qs->dwSize = qslen;
 	qs->dwNameSpace = NS_BTH;
-	DWORD flags = LUP_CONTAINERS;
-	flags |= (LUP_FLUSHCACHE | LUP_RETURN_NAME | LUP_RETURN_ADDR);
+	DWORD flags = LUP_CONTAINERS | LUP_FLUSHCACHE | LUP_RETURN_NAME | LUP_RETURN_ADDR;
 
 	// 블루투스 장치 검색 시작
 	HANDLE hLookup;
