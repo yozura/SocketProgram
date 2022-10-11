@@ -24,7 +24,46 @@ int main(int argc, char* argv[])
 	// 블루투스 장치 검색 시작
 	HANDLE hLookup;
 	retval = WSALookupServiceBegin(qs, flags, &hLookup);
+	if (SOCKET_ERROR == retval) 
+	{
+		printf("[오류] 발견된 블루투스 장치 없음!\n");
+		exit(1);
+	}
 
+	// 검색된 장치 정보 출력
+	SOCKADDR_BTH* sa = NULL;
+	bool done = false;
+	while (!done)
+	{
+		retval = WSALookupServiceNext(hLookup, flags, &qslen, qs);
+		if (NO_ERROR == retval)
+		{
+			// 정보 장치를 담은 소켓 주소 구조체 적븐
+			sa = (SOCKADDR_BTH*)qs->lpcsaBuffer->RemoteAddr.lpSockaddr;
+
+			// 블루투스 장치 주소를 문자열로 출력
+			TCHAR addr[40] = { 0, };
+			DWORD addrlen = sizeof(addr);
+			WSAAddressToString((struct sockaddr*)sa, sizeof(SOCKADDR_BTH), NULL, addr, &addrlen);
+			_tprintf(_T("블루투스 장치 발견!  %s - %s\n"), addr, qs->lpszServiceInstanceName);
+		}
+		else
+		{
+			if (WSAGetLastError() == WSAEFAULT) 
+			{
+				free(qs);
+				qs = (WSAQUERYSET*)malloc(qslen);
+			}
+			else
+			{
+				done = true;
+			}
+		}
+	}
+
+	// 블루투스 장치 검색 종료
+	WSALookupServiceEnd(hLookup);
+	free(qs);
 
 	WSACleanup();
 	return 0;

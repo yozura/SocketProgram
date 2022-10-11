@@ -47,4 +47,4 @@ void err_display(int errcode)
 		(char*)&lpMsgBuf, 0, NULL);
 	printf("[¿À·ù] %s\n", (char*)lpMsgBuf);
 	LocalFree(lpMsgBuf);
-}#pragma once
+}
